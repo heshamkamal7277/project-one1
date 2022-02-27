@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Changa:wght@200;300;400;500;600;700;800&family=Germania+One&family=Josefin+Sans:ital,wght@1,300&family=Neonderthaw&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+    
+}
+
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: darkgray; */
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 60px;
+    
+
+}
+.heading .logo img{
+    height: 30px;
+    padding-left: 30px;
+}
+
+
+.links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.links .icon{
+    display: none;
+}
+.links  ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+}
+.links  ul a{
+    
+    text-decoration: none;
+    color: #222;
+    font-size: 17px;
+    font-weight: 300;
+    transition: .3s;
+    margin-right: 15px;
+    text-transform: capitalize;
+}
+.links  ul a:hover{
+    color: rgb(10, 10, 10);
+    border-bottom: 1px solid rgb(10, 10, 10) ;
+}
+@media (max-width:999px) {
+    .heading{
+        padding-right: 0px ;
+    }
+    .links .icon{
+        display: block;
+    }
+    .links ul{
+        list-style: none;
+        padding:0;
+        margin: 0;
+        position: absolute;
+        top: calc(100% + 10px);
+        right: 40px;
+        min-width: 200px;
+        background-color: #c5c0c0;
+        display: none;
+    }
+    .links ul::before{
+        content: "";
+        position: absolute;
+        top: -20px;
+        right: 0px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent #c5c0c0 transparent;
+    }
+    .links .icon:hover  {
+        color: rgb(11, 14, 11);
+    }
+    .links:hover ul {
+        display: block;
+    }
+    .links ul li a {
+        padding:15px;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: #222;
+        display: block;
+        transition: .3s;
+        
+    }
+    .links ul li a:hover{
+        padding-left: 25px;
+    }
+    .links ul li:not(:last-child){
+        border-bottom: 1px solid gray;
+    }
+    .links .icon{
+        /* display: none; */
+        padding-right: 40px;
+        font-size: 30px;
+    }
+}
+section{
+    /* padding-left: 60px;
+    padding-right: 60px; */
+    margin-right: auto;
+    margin-left: auto;
+}
+section .landing{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../image/mountains.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .landing .text h2{
+color: darkcyan;
+font-size: 40px;
+font-weight: bold;
+letter-spacing: 1.5;
+margin-bottom: 10px;
+}
+section .landing .text .tt {
+    color: #222;
+    font-weight: 300;
+    font-size: 20px;
+
+}
+.landing2 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.landing2 .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
+}
+.landing2 .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.landing2 .card .icon2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: darkcyan;
+}
+.landing2 .card h3{
+    color: #222;
+    margin-bottom:15px ;
+    font-weight: bold;
+}
+
+.landing2 .card p {
+    width: 75% ;
+    text-align: center;
+}
+.landing3{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+.spacial h2 {
+    width: 100%;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: #c5c0c0b2;
+    letter-spacing: 1.9px;
+    /* position: relative; */
+}
+.spacial  a{
+    text-decoration: none;
+    
+}
+.landing3 .detail {
+   text-align: center;
+   position: relative;
+   bottom: 22px;
+}
+.landing3 .content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 53%));
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
+}
+.landing3 .content .card2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.landing3 .content .card2 .icon{
+    font-size: 25px;
+    color: darkcyan;
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding-right: 20px;
+    padding-left: 20px;
+    
+}
